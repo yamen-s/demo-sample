@@ -93,7 +93,7 @@ const textStyle1DarkGrey = TextStyle(
 
 const textStyle1Black = TextStyle(
   fontSize: 12,
-  fontFamily: 'RockoFLF',
+  fontFamily: 'Lato',
   fontWeight: FontWeight.w700,
   color: blackColor
 );
@@ -107,34 +107,34 @@ const textStyle1Secondary = TextStyle(
 
 const textStyle1Red = TextStyle(
   fontSize: 12,
-  fontFamily: 'RockoFLF',
+  fontFamily: 'Lato',
   fontWeight: FontWeight.w700,
   color: redColor
 );
 
 const textStyle2Black = TextStyle(
-  fontFamily: 'RockoFLF',  
+  fontFamily: 'Lato',  
   fontSize: 18,
   fontWeight: FontWeight.w700,
   color: blackColor
 );
 
 const textStyle3Black = TextStyle(
-  fontFamily: 'RockoFLF',  
+  fontFamily: 'Lato',  
   fontSize: 14,
   fontWeight: FontWeight.w700,
   color: blackColor
 );
 
 const textStyle2DarkGrey = TextStyle(
-  fontFamily: 'RockoFLF',  
+  fontFamily: 'Lato',  
   fontSize: 18,
   fontWeight: FontWeight.w700,
   color: darkGreyColor
 );
 
 const textStyle3DarkGrey = TextStyle(
-  fontFamily: 'RockoFLF',  
+  fontFamily: 'Lato',  
   fontSize: 14,
   fontWeight: FontWeight.w700,
   color: darkGreyColor
