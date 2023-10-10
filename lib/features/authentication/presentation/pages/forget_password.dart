@@ -24,8 +24,7 @@ class ForgetPasswordScreen extends StatelessWidget {
         ),
         backgroundColor: whiteColor,
         body: Padding(
-          padding:
-              const EdgeInsets.only(right: 30, left: 30, bottom: 30, top: 10),
+          padding: const EdgeInsets.only(right: 30, left: 30, bottom: 30, top: 10),
           child: CustomScrollView(
             slivers: [
               SliverFillRemaining(
@@ -39,19 +38,17 @@ class ForgetPasswordScreen extends StatelessWidget {
                       const SizedBox(),
                       const Text("Forget Password", style: headingStyle),
                       const SizedBox(height: 10),
-                      Text(
-                          "please enter your Email Address to get link reset your PIN",
+                      Text("please enter your Email Address to get link reset your PIN",
                           style: descriptionStyle),
                       const SizedBox(height: 60),
                       TextFormField(
                         controller: emailController,
                         keyboardType: TextInputType.emailAddress,
-                        enabled: true ,
+                        enabled: true,
                         onChanged: (value) {
                           value = value.trim();
                         },
-                        decoration: customInputDecoration("Email Address",
-                            isConnected: true),
+                        decoration: customInputDecoration("Email Address", isConnected: true),
                         validator: (val) {
                           // This is a regular expression (regex) for validating email addresses.
                           final RegExp emailRegex = RegExp(
@@ -80,17 +77,14 @@ class ForgetPasswordScreen extends StatelessWidget {
                         onPressed: () async {
                           // Check if the form fields are valid
                           if (_formKey.currentState!.validate()) {
-                            Navigator.of(context)
-                                .pushNamed('successfull-screen', arguments: {
+                            Navigator.of(context).pushNamed('successfull-screen', arguments: {
                               'title': 'Successfull',
                               'subtitle': 'please check your email',
-                              'message':
-                                  'We have sent you an email with a link to reset your PIN.',
+                              'message': 'We have sent you an email with a link to reset your PIN.',
                             });
                           }
                         },
-                        child: const Text('Continue',
-                            style: buttonTextDarkBgStyle),
+                        child: const Text('Continue', style: buttonTextDarkBgStyle),
                       ),
                     ],
                   ),
